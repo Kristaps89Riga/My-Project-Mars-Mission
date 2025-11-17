@@ -201,37 +201,37 @@ const MarsPage: React.FC = () => {
           Supported by leading innovators in aerospace, renewable energy, and
           biotechnology working together toward the Mars colonization vision.
         </p>
-        <div className="sponsor-box">
-          <div className="sponsor-viewport">
-            <div className="sponsor-track" id="sponsor-track">
-              <div className="sponsor-item">
+        <div className="brand-box">
+          <div className="brand-viewport">
+            <div className="brand-track" id="brand-track">
+              <div className="brand-item">
                 <img src="/assets/sponsors/sponsor1.webp" alt="Sponsor 1" />
               </div>
-              <div className="sponsor-item">
+              <div className="brand-item">
                 <img src="/assets/sponsors/sponsor2.webp" alt="Sponsor 2" />
               </div>
-              <div className="sponsor-item">
+              <div className="brand-item">
                 <img src="/assets/sponsors/sponsor3.webp" alt="Sponsor 3" />
               </div>
-              <div className="sponsor-item">
+              <div className="brand-item">
                 <img src="/assets/sponsors/sponsor4.webp" alt="Sponsor 4" />
               </div>
-              <div className="sponsor-item">
+              <div className="brand-item">
                 <img src="/assets/sponsors/sponsor5.webp" alt="Sponsor 5" />
               </div>
-              <div className="sponsor-item">
+              <div className="brand-item">
                 <img src="/assets/sponsors/sponsor6.webp" alt="Sponsor 6" />
               </div>
-              <div className="sponsor-item">
+              <div className="brand-item">
                 <img src="/assets/sponsors/sponsor7.webp" alt="Sponsor 7" />
               </div>
-              <div className="sponsor-item">
+              <div className="brand-item">
                 <img src="/assets/sponsors/sponsor8.webp" alt="Sponsor 8" />
               </div>
-              <div className="sponsor-item">
+              <div className="brand-item">
                 <img src="/assets/sponsors/sponsor9.webp" alt="Sponsor 9" />
               </div>
-              <div className="sponsor-item">
+              <div className="brand-item">
                 <img src="/assets/sponsors/sponsor10.webp" alt="Sponsor 10" />
               </div>
             </div>

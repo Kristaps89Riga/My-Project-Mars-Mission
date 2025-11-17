@@ -942,7 +942,7 @@ footer .socials a:hover {
 }
 
 /* ===== SPONSORS ===== */
-.sponsor-box {
+.brand-box {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--border);
     border-radius: 16px;
@@ -950,7 +950,7 @@ footer .socials a:hover {
     overflow: hidden;
 }
 
-.sponsor-viewport {
+.brand-viewport {
     overflow: hidden;
     border-radius: inherit;
     padding: 18px 0;
@@ -958,7 +958,7 @@ footer .socials a:hover {
 }
 
 /* Moving strip */
-.sponsor-track {
+.brand-track {
     display: flex;
     align-items: center;
     gap: 80px;
@@ -970,18 +970,18 @@ footer .socials a:hover {
 }
 
 /* Pause on hover */
-.sponsor-viewport:hover .sponsor-track {
+.brand-viewport:hover .brand-track {
     animation-play-state: paused !important;
 }
 
 /* Logos */
-.sponsor-item img {
+.brand-item img {
     height: 80px;
     filter: brightness(.95);
     transition: transform .25s ease, filter .25s ease;
 }
 
-.sponsor-item img:hover {
+.brand-item img:hover {
     transform: scale(1.25);
     filter: brightness(1.1);
     cursor: pointer;
@@ -1000,7 +1000,7 @@ footer .socials a:hover {
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
-    .sponsor-track {
+    .brand-track {
         animation: none;
         transform: none;
     }

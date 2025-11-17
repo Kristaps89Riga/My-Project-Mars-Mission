@@ -102,7 +102,7 @@ export function initMarsPage() {
 
     /* ===== SPONSORS AUTO-LOOP ===== */
     (function () {
-        const track = document.getElementById('sponsor-track');
+        const track = document.getElementById('brand-track');
         if (!track) return;
 
         const SPEED = 20; // pixels per second
