@@ -207,34 +207,34 @@ const MarsPage: React.FC = () => {
           <div className="sponsor-viewport">
             <div className="sponsor-track" id="sponsor-track">
               <div className="sponsor-item">
-                <img src="/public/assets/sponsors/sponsor1.png" alt="Sponsor 1" />
+                <img src="public/assets/sponsors/sponsor1.png" alt="Sponsor 1" />
               </div>
               <div className="sponsor-item">
-                <img src="/public/assets/sponsors/sponsor2.png" alt="Sponsor 2" />
+                <img src="public/assets/sponsors/sponsor2.png" alt="Sponsor 2" />
               </div>
               <div className="sponsor-item">
-                <img src="/public/assets/sponsors/sponsor3.png" alt="Sponsor 3" />
+                <img src="public/assets/sponsors/sponsor3.png" alt="Sponsor 3" />
               </div>
               <div className="sponsor-item">
-                <img src="/public/assets/sponsors/sponsor4.png" alt="Sponsor 4" />
+                <img src="public/assets/sponsors/sponsor4.png" alt="Sponsor 4" />
               </div>
               <div className="sponsor-item">
-                <img src="/public/assets/sponsors/sponsor5.png" alt="Sponsor 5" />
+                <img src="public/assets/sponsors/sponsor5.png" alt="Sponsor 5" />
               </div>
               <div className="sponsor-item">
-                <img src="/public/assets/sponsors/sponsor6.png" alt="Sponsor 6" />
+                <img src="public/assets/sponsors/sponsor6.png" alt="Sponsor 6" />
               </div>
               <div className="sponsor-item">
-                <img src="/public/assets/sponsors/sponsor7.png" alt="Sponsor 7" />
+                <img src="public/assets/sponsors/sponsor7.png" alt="Sponsor 7" />
               </div>
               <div className="sponsor-item">
-                <img src="/public/assets/sponsors/sponsor8.png" alt="Sponsor 8" />
+                <img src="public/assets/sponsors/sponsor8.png" alt="Sponsor 8" />
               </div>
               <div className="sponsor-item">
-                <img src="/public/assets/sponsors/sponsor9.png" alt="Sponsor 9" />
+                <img src="public/assets/sponsors/sponsor9.png" alt="Sponsor 9" />
               </div>
               <div className="sponsor-item">
-                <img src="/public/assets/sponsors/sponsor10.png" alt="Sponsor 10" />
+                <img src="public/assets/sponsors/sponsor10.png" alt="Sponsor 10" />
               </div>
             </div>
           </div>
