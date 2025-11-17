@@ -201,107 +201,107 @@ export function initMarsPage() {
         const IMAGES = [{
                 t: 'Mission to Mars: The New Dawn',
                 d: "Humanity has finally gone beyond Earth's horizon. Mars — our new beginning. Here, science, technology, and imagination come together to create new life on another planet.",
-                s: 'assets/img/01.png'
+                s: 'assets/img/01.webp'
             },
             {
                 t: 'Landing at Dusk — Olympus Mons Base',
                 d: 'A spacecraft descends toward a Martian landing pad at sunset, with Olympus Mons towering in the distance.',
-                s: 'assets/img/02.png'
+                s: 'assets/img/02.webp'
             },
             {
                 t: 'Martian Explorer — EVA-07 Suit Prototype',
                 d: "An astronaut stands on the red plains wearing an advanced exploration suit built for Mars harsh environment.",
-                s: 'assets/img/03.png'
+                s: 'assets/img/03.webp'
             },
             {
                 t: 'Ares Habitat Dome — Sector 3',
                 d: 'A modular living structure combining domes and cylindrical units for sustainable Martian life.',
-                s: 'assets/img/04.png'
+                s: 'assets/img/04.webp'
             },
             {
                 t: 'Rover Convoy — Supply Route Delta',
                 d: 'Autonomous supply rovers traverse a canyon carrying vital cargo between remote colonies.',
-                s: 'assets/img/05.png'
+                s: 'assets/img/05.webp'
             },
             {
                 t: 'Tesla Mars Rover — Solar Recon Unit',
                 d: 'A rugged exploration vehicle powered by solar panels, designed for long-range terrain scouting.',
-                s: 'assets/img/06.png'
+                s: 'assets/img/06.webp'
             },
             {
                 t: 'Terraforming towers (Steam towers)',
                 d: 'Generators that evaporate ice, producing humidity and microclimate.',
-                s: 'assets/img/07.png'
+                s: 'assets/img/07.webp'
             },
             {
                 t: 'Mission Control — Mars Orbital Operations',
                 d: 'Scientists monitor data from orbiting satellites and coordinate planetary missions.',
-                s: 'assets/img/08.png'
+                s: 'assets/img/08.webp'
             },
             {
                 t: 'Solar panel fields (Solar network builders)',
                 d: 'Robots automatically install and maintain solar panels.',
-                s: 'assets/img/09.png'
+                s: 'assets/img/09.webp'
             },
             {
                 t: 'Rover convoy and transport robots',
                 d: 'Autonomous trucks with solar panels and navigation antennas.',
-                s: 'assets/img/10.png'
+                s: 'assets/img/10.webp'
             },
             {
                 t: 'Red Market — Colony Exchange Hub',
                 d: 'Colonists and robots gather to trade tools, resources, and innovations under protective canopies.',
-                s: 'assets/img/11.png'
+                s: 'assets/img/11.webp'
             },
             {
                 t: 'Canyon City — The Redstone Metropolis',
                 d: 'A sprawling Martian city carved into canyon walls, connected by transparent walkways.',
-                s: 'assets/img/12.png'
+                s: 'assets/img/12.webp'
             },
             {
                 t: 'Living modules (HABITAT X, biodomes, domes)',
                 d: 'Hermetic biotopes with life support systems.',
-                s: 'assets/img/13.png'
+                s: 'assets/img/13.webp'
             },
             {
                 t: 'Museum of Mars Exploration — Legacy Hall',
                 d: 'Visitors explore early Mars landers and rovers preserved as symbols of human progress.',
-                s: 'assets/img/14.png'
+                s: 'assets/img/14.webp'
             },
             {
                 t: 'AI sistēma (PROMETHEUS-II)',
                 d: 'Artificial intelligence that analyzes colony data, controls robots, energy networks, and rovers.',
-                s: 'assets/img/15.png'
+                s: 'assets/img/15.webp'
             },
             {
                 t: 'Magnetic trains (Maglev tunnels)',
                 d: 'Underground transport network between cities.',
-                s: 'assets/img/16.png'
+                s: 'assets/img/16.webp'
             },
             {
                 t: 'Hydroponic greenhouses (Ares Greenhouse-01)',
                 d: 'Plant cultivation in LED and water recirculation systems.',
-                s: 'assets/img/17.png'
+                s: 'assets/img/17.webp'
             },
             {
                 t: 'Forest Dome One (Green breath on a red planet)',
                 d: 'Forest canopy with birds, trees, and a humid ecosystem.',
-                s: 'assets/img/18.png'
+                s: 'assets/img/18.webp'
             },
             {
                 t: 'Control center / Holographic interface',
                 d: '3D maps of Mars, real-time data, AI communication with Earth.',
-                s: 'assets/img/19.png'
+                s: 'assets/img/19.webp'
             },
             {
                 t: 'Blue Dawn — The Terraforming Horizon',
                 d: 'The Martian sky begins to turn blue as the atmosphere thickens, marking a new dawn.',
-                s: 'assets/img/20.png'
+                s: 'assets/img/20.webp'
             },
             {
                 t: 'Stargazers — The Perseid Dome',
                 d: 'Colonists watch a meteor rain through a transparent dome, united under the Martian night sky.',
-                s: 'assets/img/21.png'
+                s: 'assets/img/21.webp'
             },
         ];
 
