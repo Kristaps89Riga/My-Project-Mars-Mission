@@ -59,7 +59,6 @@ const MarsPage: React.FC = () => {
 		className="hero-bg hero-video"
 		autoPlay
 		muted
-		loop
 		playsInline
 		id="bgVideo"
 	  >
