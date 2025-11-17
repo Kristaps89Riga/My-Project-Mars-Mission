@@ -1,0 +1,385 @@
+/* ---------- GLOBAL THEME (OPTIONAL) ---------- */
+:root{
+  --accent:#FF6E00;
+  --bg:#0b0e12;
+  --text:#ffffff;
+}
+
+/* ---------- NOT FOUND LAYOUT ---------- */
+body:has(.notfound-page) {
+  padding-top: 0 !important;
+}
+.notfound-page{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:radial-gradient(circle at top, #1a2230 0%, #05070c 55%, #010206 100%);
+  color:var(--text);
+  font-family:'Orbitron',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  text-align:center;
+  padding:24px;
+}
+
+/* Local reset inside 404 page only */
+.notfound-page *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* ---------- TEXT AREA ---------- */
+.notfound-page h1{
+  font-size:3.2rem;
+  margin-bottom:12px;
+  background:linear-gradient(180deg,#fcff9e 0%,#c67700 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.notfound-page p{
+  color:#ffd9b3;
+  max-width:620px;
+  margin:0 auto 22px;
+  line-height:1.6;
+}
+.notfound-page a.btn{
+  display:inline-block;
+  padding:12px 28px;
+  margin-top:4px;
+  text-decoration:none;
+  color:#000;
+  font-weight:700;
+  border-radius:999px;
+  background:var(--accent);
+  box-shadow:0 0 22px rgba(255,110,0,.45);
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  font-size:.9rem;
+}
+.notfound-page a.btn:hover{
+  transform:translateY(-1px);
+  box-shadow:0 0 26px rgba(255,110,0,.75);
+}
+
+/* ---------- ROVER v3 AREA ---------- */
+.notfound-page .rover-wrap{
+  position:relative;
+  width:100%;
+  max-width:540px;
+  height:260px;
+  margin-top:40px;
+}
+
+/* Ground horizon line */
+.notfound-page .ground-line{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:58px;
+  height:3px;
+  background:linear-gradient(90deg,rgba(255,110,0,.95),rgba(255,110,0,.08));
+  box-shadow:0 0 18px rgba(255,110,0,.9);
+  opacity:.85;
+}
+
+/* Laser scanning grid on ground */
+.notfound-page .scan-grid{
+  position:absolute;
+  left:50%;
+  bottom:60px;
+  width:360px;
+  height:140px;
+  transform:translateX(-50%);
+  background-image:
+    linear-gradient(to right, rgba(255,110,0,.4) 1px, transparent 1px),
+    linear-gradient(to top, rgba(255,110,0,.35) 1px, transparent 1px);
+  background-size:26px 22px;
+  opacity:.28;
+  transform-origin:center bottom;
+  filter:drop-shadow(0 0 12px rgba(255,110,0,.85));
+  animation:gridPulse 2.3s ease-in-out infinite;
+}
+
+/* Faint circular scan highlight under rover */
+.notfound-page .grid-spot{
+  position:absolute;
+  left:50%;
+  bottom:60px;
+  width:180px;
+  height:60px;
+  transform:translateX(-50%);
+  background:radial-gradient(ellipse at 50% 40%, rgba(255,255,190,.4), transparent 70%);
+  opacity:.45;
+  mix-blend-mode:screen;
+}
+
+/* Rover container that moves left ↔ right */
+.notfound-page .rover{
+  position:absolute;
+  width:190px;
+  height:120px;
+  bottom:70px;
+  animation:roverDrive 7.5s ease-in-out infinite alternate;
+}
+
+/* Soft shadow under rover */
+.notfound-page .rover-shadow{
+  position:absolute;
+  left:18%;
+  right:18%;
+  bottom:66px;
+  height:12px;
+  background:radial-gradient(ellipse at 50% 50%, rgba(0,0,0,.9), transparent 72%);
+  opacity:.8;
+  filter:blur(2px);
+}
+
+/* Main rover body */
+.notfound-page .rover-body{
+  position:absolute;
+  left:20px;
+  right:20px;
+  bottom:44px;
+  height:42px;
+  border-radius:14px;
+  background:linear-gradient(135deg,#1e232f,#0c1017);
+  border:1px solid rgba(255,255,255,.2);
+  box-shadow:
+    0 0 18px rgba(0,0,0,.9),
+    0 0 20px rgba(255,110,0,.28);
+}
+.notfound-page .rover-body::before{
+  content:"ARES SCAN R-3";
+  position:absolute;
+  left:14px;
+  top:8px;
+  font-size:.52rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:#ffdfb3;
+  opacity:.8;
+}
+
+/* Front sensor bar */
+.notfound-page .sensor-bar{
+  position:absolute;
+  right:16px;
+  bottom:52px;
+  width:46px;
+  height:8px;
+  border-radius:999px;
+  background:linear-gradient(90deg,#10141b,#252b3a);
+  box-shadow:0 0 10px rgba(0,0,0,.9);
+}
+.notfound-page .sensor-bar::after{
+  content:"";
+  position:absolute;
+  inset:2px;
+  border-radius:999px;
+  background:linear-gradient(90deg,#ff8a3c,#ffe9a2);
+  box-shadow:0 0 12px rgba(255,138,60,.85);
+}
+
+/* Top module */
+.notfound-page .rover-top{
+  position:absolute;
+  left:46px;
+  right:58px;
+  bottom:84px;
+  height:24px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#252b3a,#131823);
+  border:1px solid rgba(255,255,255,.16);
+}
+
+/* Camera head on front */
+.notfound-page .camera-head{
+  position:absolute;
+  right:38px;
+  bottom:106px;
+  width:26px;
+  height:18px;
+  border-radius:8px;
+  background:#10151f;
+  border:1px solid rgba(255,255,255,.2);
+  box-shadow:0 0 12px rgba(0,0,0,.9);
+}
+.notfound-page .camera-lens{
+  position:absolute;
+  inset:3px;
+  border-radius:6px;
+  background:radial-gradient(circle at 30% 20%, #ffffff, #6cf1ff 40%, #07182c 82%);
+  box-shadow:0 0 12px rgba(108,241,255,.9);
+}
+
+/* Robotic arm base */
+.notfound-page .arm-base{
+  position:absolute;
+  left:50px;
+  bottom:88px;
+  width:18px;
+  height:18px;
+  border-radius:50%;
+  background:#10161f;
+  border:2px solid rgba(255,255,255,.2);
+  box-shadow:0 0 10px rgba(0,0,0,.9);
+}
+
+/* Arm segments */
+.notfound-page .arm-seg1,
+.notfound-page .arm-seg2{
+  position:absolute;
+  width:6px;
+  background:linear-gradient(180deg,#ffb36a,#72401a);
+  border-radius:999px;
+  transform-origin:50% 100%;
+}
+.notfound-page .arm-seg1{
+  bottom:106px;
+  left:58px;
+  height:32px;
+  transform:rotate(-24deg);
+}
+.notfound-page .arm-seg2{
+  bottom:132px;
+  left:78px;
+  height:28px;
+  transform-origin:50% 95%;
+  transform:rotate(-16deg);
+}
+
+/* Gripper */
+.notfound-page .arm-grip{
+  position:absolute;
+  bottom:152px;
+  left:94px;
+  width:18px;
+  height:10px;
+  border-radius:6px;
+  background:#ffb36a;
+  box-shadow:0 0 10px rgba(255,179,106,.9);
+}
+.notfound-page .arm-grip::before,
+.notfound-page .arm-grip::after{
+  content:"";
+  position:absolute;
+  top:1px;
+  width:6px;
+  height:8px;
+  border-radius:3px;
+  background:#42230e;
+}
+.notfound-page .arm-grip::before{ left:-5px; }
+.notfound-page .arm-grip::after { right:-5px; }
+
+/* Chassis beam */
+.notfound-page .rover-chassis{
+  position:absolute;
+  left:22px;
+  right:22px;
+  bottom:36px;
+  height:5px;
+  background:linear-gradient(90deg,rgba(240,240,240,.32),rgba(0,0,0,1));
+}
+
+/* Wheels */
+.notfound-page .wheel{
+  position:absolute;
+  bottom:16px;
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  background:radial-gradient(circle at 30% 30%, #555, #05070b 75%);
+  box-shadow:0 0 10px rgba(0,0,0,.95);
+  overflow:hidden;
+}
+.notfound-page .wheel::before{
+  content:"";
+  position:absolute;
+  inset:6px;
+  border-radius:50%;
+  border:2px solid rgba(255,255,255,.18);
+}
+.notfound-page .wheel::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:2px;
+  height:130%;
+  background:rgba(255,255,255,.25);
+  transform-origin:center;
+  animation:wheelSpin 1.1s linear infinite;
+}
+.notfound-page .wheel.front-left{ left:30px; }
+.notfound-page .wheel.front-right{ right:30px; }
+
+/* Dust puffs behind wheels */
+.notfound-page .dust{
+  position:absolute;
+  bottom:24px;
+  left:0;
+  width:100%;
+  height:30px;
+  pointer-events:none;
+}
+.notfound-page .dust span{
+  position:absolute;
+  bottom:0;
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:rgba(255,110,0,.7);
+  opacity:.35;
+  filter:blur(1px);
+  animation:dustPuff 2.3s ease-out infinite;
+}
+.notfound-page .dust span:nth-child(1){ left:26%; animation-delay:0s; }
+.notfound-page .dust span:nth-child(2){ left:50%; animation-delay:.5s; }
+.notfound-page .dust span:nth-child(3){ left:72%; animation-delay:1s; }
+
+/* ---------- ANIMATIONS ---------- */
+@keyframes roverDrive{
+  0%   { transform:translateX(-18vw); }
+  50%  { transform:translateX(14vw); }
+  100% { transform:translateX(-10vw); }
+}
+@keyframes wheelSpin{
+  to { transform:translate(-50%, -50%) rotate(360deg); }
+}
+@keyframes dustPuff{
+  0%{
+    transform:translateY(0) scale(1);
+    opacity:.35;
+  }
+  70%{
+    transform:translateY(-16px) scale(1.6);
+    opacity:.12;
+  }
+  100%{
+    transform:translateY(-22px) scale(1.8);
+    opacity:0;
+  }
+}
+@keyframes gridPulse{
+  0%,100%{
+    opacity:.24;
+    transform:translateX(-50%) scaleY(1);
+  }
+  50%{
+    opacity:.42;
+    transform:translateX(-50%) scaleY(1.05);
+  }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:600px){
+  .notfound-page h1{ 
+    font-size:2.4rem; 
+  }
+  .notfound-page .rover-wrap{
+    max-width:420px;
+    height:230px;
+  }
+}
