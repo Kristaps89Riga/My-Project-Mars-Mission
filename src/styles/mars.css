@@ -1006,6 +1006,35 @@ footer .socials a:hover {
     }
 }
 
+/* Fix: keep sponsors visible on larger screens too */
+#sponsors .sponsor-viewport {
+	overflow: hidden;
+}
+
+#sponsors .sponsor-track {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+
+/* On desktop, cancel any JS/CSS that moves or hides them */
+@media (min-width: 768px) {
+	#sponsors .sponsor-track {
+		transform: none !important;
+		animation: none !important;
+		opacity: 1 !important;
+		visibility: visible !important;
+	}
+
+	#sponsors .sponsor-item img {
+		display: block;
+		max-height: 48px;
+		width: auto;
+		opacity: 1 !important;
+		visibility: visible !important;
+	}
+}
+
 /* ===== VIBE CARDS ===== */
 .vibe-wrap {
     width: min(1100px, 92%);
