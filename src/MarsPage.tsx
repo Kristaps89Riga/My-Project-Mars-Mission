@@ -64,7 +64,6 @@ const MarsPage: React.FC = () => {
 		id="bgVideo"
 	  >
 		<source src="/assets/video/mars.webm" type="video/webm" />
-		<source src="/assets/video/mars.mp4" type="video/mp4" />
 	  </video>
 
 	  {/* Desktop Image (your original fallback) */}

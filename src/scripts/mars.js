@@ -9,8 +9,8 @@ export function initMarsPage() {
     const video = document.getElementById('bgVideo');
     let soundEnabled = true;
 
-    const hoverBase = new Audio('assets/audio/sound01.wav');
-    const clickBase = new Audio('assets/audio/sound02.wav');
+    const hoverBase = new Audio('assets/audio/sound01.mp3');
+    const clickBase = new Audio('assets/audio/sound02.mp3');
     const HOVER_VOL = 0.25;
     const CLICK_VOL = 0.35;
 
