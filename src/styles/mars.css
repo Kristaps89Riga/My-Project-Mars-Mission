@@ -1005,29 +1005,6 @@ footer .socials a:hover {
         transform: none;
     }
 }
-/* ---- Force sponsors always visible (disables buggy JS scroll) ---- */
-#sponsors .sponsor-viewport {
-	overflow: hidden;
-}
-
-#sponsors .sponsor-track {
-	display: flex;
-	align-items: center;
-	gap: 32px;
-	transform: none !important;
-	/* cancel JS transforms */
-	animation: none !important;
-	/* cancel any CSS animation */
-	opacity: 1 !important;
-}
-
-#sponsors .sponsor-item img {
-	display: block;
-	max-height: 48px;
-	width: auto;
-	opacity: 1 !important;
-	visibility: visible !important;
-}
 
 /* ===== VIBE CARDS ===== */
 .vibe-wrap {
